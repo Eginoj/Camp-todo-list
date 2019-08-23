@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Map Exercise</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="display-2 text-center">CAMP TODO LIST</h1>
+      <div class="text-center">
+        <label for="name">Write name</label>
+        <input type="text" id="name" />
+      </div>
+      <br />
+
+      <!-- <label for="numericalGrade">Grade</label>
+        <input type="number" min="0" max="100" id="numericalGrade" /><br /> -->
+
+      <!-- list of tasks -->
+      <div class="center text-center">
+        <h3 class="display-4 text-center">List of tasks</h3>
+        <ul class="list-group">
+          <li class="list-group-item">Front Room Sweep</li>
+          <li class="list-group-item">Back Room Sweep</li>
+          <li class="list-group-item">Outside Grounds</li>
+          <li class="list-group-item">Clean Toilet</li>
+          <li class="list-group-item">Clean Sink</li>
+          <li class="list-group-item">Trash Patrol and Supplies</li>
+        </ul>
+      </div>
+      <div class="text-center">
+        <label for="tasks"><h4>Write in tasks</h4></label><br />
+        <input type="text" id="tasks" /><br />
+        <!-- <input type="text" id="tasks" />Front Room Sweep<br /> -->
+        <!-- <input type="radio" id="tasks" />Back Room Sweep<br />
+        <input type="radio" id="tasks" />Outside Grounds<br />
+        <input type="radio" id="tasks" />Clean Toilet<br />
+        <input type="radio" id="tasks" />Clean Sink<br />
+        <input type="radio" id="tasks" />Trash Patrol and Supplies<br /> -->
+
+        <button class="btn btn-info btn-sm m-1" id="btnToAddToMap">
+          Add to Map Object</button
+        ><br />
+        <button class="btn btn-primary btn-lg m-1" id="btnDisplayMap">
+          Display Map
+        </button>
+        <div id="result"></div>
+      </div>
+
+      <!-- <script>
+          const ADDBUTTON = document.getElementById("btnToAddToMap");
+          const DISPLAYBUTTON = document.getElementById("btnDisplayMap");
+          let job = new Map();
+
+          ADDBUTTON.onclick = function() {
+            const name = document.getElementById("name");
+            const task = document.getElementById("tasks");
+            job.set(tasks.value, name.value);
+            name.value = "";
+            tasks.value = "";
+          };
+
+          console.log(job);
+
+          DISPLAYBUTTON.onclick = function() {
+            let out = "";
+            for (let x of job.entries()) {
+              out += x[0] + ": " + x[1];
+              out += "<br/>";
+            }
+            document.getElementById("result").innerHTML = out;
+          };
+        </script> -->
+      <script src="app.js"></script>
+    </div>
+  </body>
+</html>
